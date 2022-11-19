@@ -1,0 +1,46 @@
+{
+  "expenses": [
+    {
+      "id": 0,
+      "type": "Food",
+      "description": "Kruh, mlijeko, ...",
+      "value": 20,
+      "date": "November"
+    },
+    {
+      "id": 1,
+      "type": "Food",
+      "description": "Voda, struja, ...",
+      "value": 150,
+      "date": "November"
+    },
+    {
+      "id": 2,
+      "type": "Food",
+      "description": "Članarina za dvoranu",
+      "value": 200,
+      "date": "November"
+    },
+    {
+      "id": 3,
+      "type": "Food",
+      "description": "Taxi, benzin",
+      "value": 500,
+      "date": "November"
+    },
+    {
+      "id": 4,
+      "type": "Food",
+      "description": "Taxi, benzin",
+      "value": 500,
+      "date": "November"
+    },
+    {
+      "id": 5,
+      "expenseType": "Food",
+      "description": "Taxi, benzin",
+      "value": 500,
+      "date": "November"
+    }
+  ]
+}
