@@ -1,0 +1,19 @@
+@import "styles/colors.scss";
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 20rem;
+  height: 20rem;
+  padding: 2rem;
+  box-shadow: $box-shadow;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: 0.3s transform;
+
+  &:hover {
+    transform: translateY(-0.3rem);
+  }
+}
