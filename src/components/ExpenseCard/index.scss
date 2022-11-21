@@ -1,6 +1,7 @@
 @import "styles/colors.scss";
 
 .card {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -15,5 +16,11 @@
 
   &:hover {
     transform: translateY(-0.3rem);
+  }
+
+  &__icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
   }
 }

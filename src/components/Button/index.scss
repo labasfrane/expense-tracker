@@ -1,0 +1,29 @@
+@import "styles/colors.scss";
+
+button {
+  border-radius: 0.5rem;
+  color: $color-white;
+  background-color: $color-primary;
+  border: none;
+  padding: 1rem 2rem;
+  transition: 0.2s transform;
+  cursor: pointer;
+
+  &:hover {
+    transform: translateY(-0.3rem);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  &:active {
+    transform: translateY(-0.1rem);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  &.success {
+    background-color: $color-success;
+  }
+
+  &.danger {
+    background-color: $color-danger;
+  }
+}
