@@ -1,0 +1,18 @@
+.dashboard {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__list {
+    width: 70%;
+  }
+
+  &__form {
+    border: black 0.1rem solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+  }
+}

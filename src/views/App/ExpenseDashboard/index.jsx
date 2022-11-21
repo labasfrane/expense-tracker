@@ -1,5 +1,7 @@
 import ExpensesList from "components/ExpensesList/index";
 
+import "./index.scss";
+
 const listOfExpenses = [
   {
     id: 0,
@@ -17,18 +19,13 @@ const listOfExpenses = [
   },
 ];
 
-const App = () => {
+const ExpenseDashboard = () => {
   return (
-    <>
-      <header>Header with title</header>
-      <main>
-        <h1>Heading</h1>
-        <ExpensesList expensesData={listOfExpenses} />
-      </main>
-    </>
+    <div className="dashboard">
+      <h3 className="dashboard__form">Form Component placehodler</h3>
+      <ExpensesList className="dashboard__list" expensesData={listOfExpenses} />
+    </div>
   );
 };
 
-console.log(listOfExpenses);
-
-export default App;
+export default ExpenseDashboard;
