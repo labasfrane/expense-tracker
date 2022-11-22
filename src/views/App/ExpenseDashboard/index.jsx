@@ -1,4 +1,5 @@
 import ExpensesList from "components/ExpensesList/index";
+import NavigationBar from "components/NavigationBar/index";
 
 import "./index.scss";
 
@@ -19,12 +20,26 @@ const listOfExpenses = [
   },
 ];
 
+const NavigationItems = [
+  { name: "home", path: "" },
+  {
+    name: "total",
+    path: "total",
+  },
+];
+
 const ExpenseDashboard = () => {
   return (
-    <div className="dashboard">
-      <h3 className="dashboard__form">Form Component placehodler</h3>
-      <ExpensesList className="dashboard__list" expensesData={listOfExpenses} />
-    </div>
+    <>
+      <NavigationBar items={NavigationItems} />
+      <div className="dashboard">
+        <h3 className="dashboard__form">Form Component placehodler</h3>
+        <ExpensesList
+          className="dashboard__list"
+          expensesData={listOfExpenses}
+        />
+      </div>
+    </>
   );
 };
 
