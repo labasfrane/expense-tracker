@@ -38,9 +38,9 @@ const ExpenseCard = ({ expense }) => {
         <Modal stateHandler={setIsModalActive}>{expenseCardContent}</Modal>
       )}
       {isDeleteModalActive && (
-        <ConfirmationModal
-          stateHandler={setIsDeleteModalActive}
-        >{`Delete ${type} expense?`}</ConfirmationModal>
+        <ConfirmationModal stateHandler={setIsDeleteModalActive}>{`Delete ${
+          type || "this"
+        } expense?`}</ConfirmationModal>
       )}
       <article className="card" onClick={openModal}>
         <FontAwesomeIcon
