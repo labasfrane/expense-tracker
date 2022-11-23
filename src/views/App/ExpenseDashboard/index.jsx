@@ -1,24 +1,9 @@
+import { useEffect, useState, useMemo, useCallback } from "react";
 import ExpensesList from "components/ExpensesList/index";
 import NavigationBar from "components/NavigationBar/index";
+import ExpensesHttp from "http/expenses.http";
 
 import "./index.scss";
-
-const listOfExpenses = [
-  {
-    id: 0,
-    type: "Food",
-    description: "Kruh, mlijeko, ...",
-    value: 20,
-    date: "November",
-  },
-  {
-    id: 1,
-    type: "Food",
-    description: "Voda, struja, ...",
-    value: 150,
-    date: "November",
-  },
-];
 
 const NavigationItems = [
   { name: "home", path: "" },
@@ -29,15 +14,25 @@ const NavigationItems = [
 ];
 
 const ExpenseDashboard = () => {
+  const [data, setData] = useState([]);
+  const expensesHttp = useMemo(() => new ExpensesHttp(), []);
+
+  const fetchExpenses = useCallback(async () => {
+    const getExpenses = await expensesHttp.getExpenses();
+
+    setData(getExpenses);
+  }, [expensesHttp, setData]);
+
+  useEffect(() => {
+    fetchExpenses();
+  }, [fetchExpenses]);
+
   return (
     <>
       <NavigationBar items={NavigationItems} />
       <div className="dashboard">
         <h3 className="dashboard__form">Form Component placehodler</h3>
-        <ExpensesList
-          className="dashboard__list"
-          expensesData={listOfExpenses}
-        />
+        <ExpensesList className="dashboard__list" expensesData={data} />
       </div>
     </>
   );

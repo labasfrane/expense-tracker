@@ -16,11 +16,16 @@
 
   &:hover {
     transform: translateY(-0.3rem);
+
+    .card__icon {
+      display: block;
+    }
   }
 
   &__icon {
+    display: none;
     position: absolute;
-    top: 20px;
+    bottom: 20px;
     right: 20px;
   }
 }

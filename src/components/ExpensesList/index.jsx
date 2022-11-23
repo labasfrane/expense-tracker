@@ -4,7 +4,7 @@ import { Expense } from "models/expense.model";
 import "./index.scss";
 
 const ExpensesList = ({ expensesData }) => {
-  const content = expensesData.map((item) => {
+  const content = expensesData?.map((item) => {
     return (
       <li key={item.id}>
         <ExpenseCard expense={new Expense(item)}></ExpenseCard>
