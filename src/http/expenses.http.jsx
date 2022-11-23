@@ -17,6 +17,36 @@ class ExpensesHttp extends HttpClient {
 
     return expenses;
   }
+
+  async getExpense(id) {
+    const { data } = await axios.get(this.url(`/expenses/${id}`));
+
+    return new Expense(data);
+  }
+
+  async createExpense(expense) {
+    const { data } = await axios.post(this.url("/expenses"), expense);
+
+    return new Expense(data);
+  }
+
+  async replaceExpense(id, ...expense) {
+    const { data } = await axios.put(this.url(`/expenses/${id}`), expense);
+
+    return new Expense(data);
+  }
+
+  async updateExpense(id, body) {
+    const { data } = await axios.patch(this.url(`/expenses/${id}`), body);
+
+    return new Expense(data);
+  }
+
+  async deleteExpense(id) {
+    const { data } = await axios.delete(this.url(`/expenses${id}`));
+
+    return data;
+  }
 }
 
 export default ExpensesHttp;
