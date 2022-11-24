@@ -1,20 +1,12 @@
-import { useEffect, useState, useMemo, useCallback } from "react";
+import { useEffect, useMemo, useCallback, useContext } from "react";
 import ExpensesList from "components/ExpensesList/index";
-import NavigationBar from "components/NavigationBar/index";
 import ExpensesHttp from "http/expenses.http";
 
 import "./index.scss";
-
-const NavigationItems = [
-  { name: "home", path: "" },
-  {
-    name: "total",
-    path: "total",
-  },
-];
+import { ExpensesContext } from "context/expenses.ctx";
 
 const ExpenseDashboard = () => {
-  const [data, setData] = useState([]);
+  const { data, setData } = useContext(ExpensesContext);
   const expensesHttp = useMemo(() => new ExpensesHttp(), []);
 
   const fetchExpenses = useCallback(async () => {
@@ -29,7 +21,6 @@ const ExpenseDashboard = () => {
 
   return (
     <>
-      <NavigationBar items={NavigationItems} />
       <div className="dashboard">
         <h3 className="dashboard__form">Form Component placehodler</h3>
         <ExpensesList className="dashboard__list" expensesData={data} />
