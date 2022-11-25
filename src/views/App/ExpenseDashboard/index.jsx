@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useCallback, useContext } from "react";
+import ExpensesForm from "components/ExpensesForm/index";
 import ExpensesList from "components/ExpensesList/index";
 import ExpensesHttp from "http/expenses.http";
 
@@ -22,7 +23,7 @@ const ExpenseDashboard = () => {
   return (
     <>
       <div className="dashboard">
-        <h3 className="dashboard__form">Form Component placehodler</h3>
+        <ExpensesForm className="dashboard__form" />
         <ExpensesList className="dashboard__list" expensesData={data} />
       </div>
     </>
