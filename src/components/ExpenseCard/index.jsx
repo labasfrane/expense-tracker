@@ -1,8 +1,8 @@
 import { useState } from "react";
 import Modal from "components/Modals/Modal/index";
-import { FontAwesomeIcon } from "../../../node_modules/@fortawesome/react-fontawesome/index";
-import { faTrash } from "../../../node_modules/@fortawesome/free-solid-svg-icons/index";
 import ConfirmationModal from "components/Modals/ConfirmationModal/index";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faTrash } from "@fortawesome/free-solid-svg-icons";
 
 import "./index.scss";
 

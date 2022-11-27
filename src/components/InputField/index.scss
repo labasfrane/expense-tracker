@@ -1,0 +1,25 @@
+.input-field {
+  &__label {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+
+  &__input {
+    display: flex;
+    border-bottom: 0.1rem solid black;
+    margin-bottom: 0.5rem;
+
+    input {
+      margin-left: 0.5rem;
+      border: none;
+      outline: none;
+      background-color: inherit;
+    }
+  }
+
+  &__error {
+    display: block;
+    color: red;
+    height: 2.4rem;
+  }
+}
