@@ -6,7 +6,8 @@
 
   &__input {
     display: flex;
-    border-bottom: 0.1rem solid black;
+    border: 0.1rem solid black;
+    border-radius: 0.2rem;
     margin-bottom: 0.5rem;
 
     input {
@@ -23,3 +24,9 @@
     height: 2.4rem;
   }
 }
+
+// .submitted {
+//   .input-field__error {
+//     visibility: unset;
+//   }
+// }

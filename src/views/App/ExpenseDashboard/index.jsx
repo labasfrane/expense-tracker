@@ -19,7 +19,6 @@ const ExpenseDashboard = () => {
   useEffect(() => {
     fetchExpenses();
   }, [fetchExpenses]);
-
   return (
     <>
       <div className="dashboard">
