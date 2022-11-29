@@ -1,6 +1,8 @@
 # Cash-Track
 
-This is web application where you can save and follow your expenses.
+This is web application where you can save and follow your expenses. 
+
+Application is currently work in progress. Check out code to see daily updates!
 
 # Screenshot
 
