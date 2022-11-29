@@ -4,7 +4,7 @@ This is web application where you can save and follow your expenses.
 
 # Screenshot
 
-![CashTrack Screenshot] (/home/frane/expense-tracker/public/Assets/cash-track-screenshot.png)
+![CashTrack Screenshot] (expense-tracker/public/Assets/cash-track-screenshot.png)
 
 # Installation process
 
