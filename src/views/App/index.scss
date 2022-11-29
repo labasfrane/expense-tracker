@@ -1,0 +1,12 @@
+@import "styles/colors.scss";
+
+.header {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+  height: 4rem;
+
+  &__title {
+    color: $color-primary;
+  }
+}

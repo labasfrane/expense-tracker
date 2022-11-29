@@ -3,44 +3,44 @@
     {
       "id": 0,
       "type": "Food",
-      "description": "Kruh, mlijeko, ...",
-      "value": 20,
-      "date": "November"
+      "description": "Bread, Milk",
+      "value": 15,
+      "date": "01.September.2022"
     },
     {
       "id": 1,
-      "type": "Food",
-      "description": "Voda, struja, ...",
-      "value": 150,
-      "date": "November"
+      "type": "Transport",
+      "description": "Uber to Work",
+      "value": 33,
+      "date": "01.September.2022"
     },
     {
       "id": 2,
-      "type": "Food",
-      "description": "Članarina za dvoranu",
-      "value": 200,
-      "date": "November"
+      "type": "Utilities",
+      "description": "Bill nr. 11",
+      "value": 150,
+      "date": "01.December.2022"
     },
     {
       "id": 3,
-      "type": "Food",
-      "description": "Taxi, benzin",
-      "value": 500,
-      "date": "November"
+      "type": "Clothing",
+      "description": "New pair of shoes",
+      "value": 300,
+      "date": "01.September.2022"
     },
     {
       "id": 4,
-      "type": "Food",
-      "description": "Taxi, benzin",
-      "value": 500,
-      "date": "November"
+      "type": "Other",
+      "description": "Gym Membership",
+      "value": 40,
+      "date": "01.December.2022"
     },
     {
       "id": 5,
-      "expenseType": "Food",
-      "description": "Taxi, benzin",
-      "value": 500,
-      "date": "November"
+      "type": "Other",
+      "description": "Something",
+      "value": 100,
+      "date": "01.September.2022"
     }
   ]
 }

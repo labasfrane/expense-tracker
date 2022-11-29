@@ -1,7 +1,10 @@
+@import "styles/colors.scss";
+
 .navigation {
   display: flex;
   justify-content: center;
-  margin-bottom: 3rem;
+  height: 3.3rem;
+  margin-bottom: 2.5rem;
 
   a {
     text-transform: uppercase;
@@ -14,8 +17,13 @@
       margin-right: 1rem;
     }
 
+    &:hover {
+      color: $color-primary;
+      border-bottom: 0.3rem solid $color-primary;
+    }
+
     &.active {
-      color: orange;
+      color: $color-primary;
     }
   }
 }

@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { createPortal } from "react-dom";
-import { faX } from "../../../../node_modules/@fortawesome/free-solid-svg-icons/index";
-import { FontAwesomeIcon } from "../../../../node_modules/@fortawesome/react-fontawesome/index";
+import { faX } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import "./index.scss";
 

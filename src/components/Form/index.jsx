@@ -6,7 +6,7 @@ const Form = ({ children, onSubmit }) => {
   return (
     <FormProvider {...methods}>
       <form
-        className={methods.formState.isSubmitted ? "submitted" : ""}
+        className={`${methods.formState.isSubmitted ? "submitted" : ""} form`}
         onSubmit={methods.handleSubmit(onSubmit)}
       >
         {children}

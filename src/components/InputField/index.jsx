@@ -1,6 +1,6 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { cloneElement } from "react";
 import { useFormContext } from "react-hook-form";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import "./index.scss";
 

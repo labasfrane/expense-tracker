@@ -1,6 +1,13 @@
 :root {
-  --color-primary: #28293e;
+  --color-primary: #2f74c8;
+  --color-secondary: #2169a3;
+  --color-tertiary: #408fce;
+  --color-grey: #cbcbcb;
+  --color-lightgrey: #e6e6e4;
   --color-white: white;
   --color-success: green;
   --color-danger: red;
+
+  --box-shadow: 0rem 3rem 5rem grey;
+  --backdrop: rgba(200, 200, 200, 0.8);
 }

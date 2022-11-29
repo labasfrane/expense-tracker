@@ -1,4 +1,4 @@
-import { NavLink } from "../../../node_modules/react-router-dom/dist/index";
+import { NavLink } from "react-router-dom";
 
 import "./index.scss";
 

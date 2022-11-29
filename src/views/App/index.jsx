@@ -1,6 +1,8 @@
 import ExpenseDashboard from "./ExpenseDashboard/index";
-import { ExpensesContextProvider } from "context/expenses.ctx";
 import NavigationBar from "components/NavigationBar/index";
+import { ExpensesContextProvider } from "context/expenses.ctx";
+
+import "./index.scss";
 
 const App = () => {
   const NavigationItems = [
@@ -13,9 +15,10 @@ const App = () => {
 
   return (
     <ExpensesContextProvider>
-      <header>Header with title</header>
+      <header className="header">
+        <h1 className="header__title">Expense Tracker</h1>
+      </header>
       <main>
-        <h1>Heading</h1>
         <NavigationBar items={NavigationItems} />
         <ExpenseDashboard />
       </main>

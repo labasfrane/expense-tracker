@@ -1,10 +1,12 @@
 import Button from "components/Button/index";
-import InputField from "components/InputField/index";
 import Form from "components/Form/index";
-import { faComment } from "@fortawesome/free-solid-svg-icons";
+import InputField from "components/InputField/index";
 import ExpensesHttp from "http/expenses.http";
-import "./index.scss";
 import { validators } from "utils/generic.utils";
+import { faComment } from "@fortawesome/free-solid-svg-icons";
+import { faMoneyBill } from "@fortawesome/free-solid-svg-icons/index";
+
+import "./index.scss";
 
 const ExpensesForm = () => {
   const expensesHttp = new ExpensesHttp();
@@ -34,7 +36,20 @@ const ExpensesForm = () => {
           }),
         ]}
       >
-        <input type="textarea" placeholder="Description" />
+        <input type="text" placeholder="Description" />
+      </InputField>
+      <InputField
+        label="Value"
+        icon={faMoneyBill}
+        formControl={[
+          "value",
+          validators({
+            required: true,
+            maxLength: 10,
+          }),
+        ]}
+      >
+        <input type="text" placeholder="Value" />
       </InputField>
       <input type="date" />
       <Button>Submit</Button>
