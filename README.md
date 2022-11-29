@@ -4,7 +4,7 @@ This is web application where you can save and follow your expenses.
 
 # Screenshot
 
-![CashTrack Screenshot] (expense-tracker/public/Assets/cash-track-screenshot.png)
+![cash-track-screenshot](https://user-images.githubusercontent.com/62171931/204528359-a68d3515-1611-486d-9c56-ae5e69433144.png)
 
 # Installation process
 
