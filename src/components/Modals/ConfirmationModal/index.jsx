@@ -3,7 +3,13 @@ import Modal from "../Modal/index";
 
 import "./index.scss";
 
-const ConfirmationModal = ({ children, stateHandler }) => {
+const ConfirmationModal = ({ children, stateHandler, onConfirm }) => {
+  const confirmationHandler = async () => {
+    await onConfirm();
+
+    stateHandler(false);
+  };
+
   return (
     <>
       <Modal stateHandler={stateHandler}>
@@ -12,7 +18,9 @@ const ConfirmationModal = ({ children, stateHandler }) => {
           <Button className="danger" onClick={() => stateHandler()}>
             Cancel
           </Button>
-          <Button className="success">Confirm</Button>
+          <Button className="success" onClick={confirmationHandler}>
+            Confirm
+          </Button>
         </div>
       </Modal>
     </>
