@@ -43,7 +43,7 @@ class ExpensesHttp extends HttpClient {
   }
 
   async deleteExpense(id) {
-    const { data } = await axios.delete(this.url(`/expenses${id}`));
+    const { data } = await axios.delete(this.url(`/expenses/${id}`));
 
     return data;
   }

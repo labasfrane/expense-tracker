@@ -1,6 +1,9 @@
 import { useState, createContext } from "react";
 
-const ExpensesContext = createContext({});
+const ExpensesContext = createContext({
+  data: [],
+  setData: (data) => {},
+});
 
 const ExpensesContextProvider = ({ children }) => {
   const [data, setData] = useState();

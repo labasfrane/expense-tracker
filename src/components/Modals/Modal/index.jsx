@@ -7,6 +7,7 @@ import "./index.scss";
 
 const Modal = ({ children, stateHandler }) => {
   const modalContainer = document.getElementById("modal-root");
+  document.body.style.overflow = "hidden";
 
   const close = () => {
     stateHandler(false);
