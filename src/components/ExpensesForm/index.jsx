@@ -7,6 +7,7 @@ import { faComment } from "@fortawesome/free-solid-svg-icons";
 import { faMoneyBill } from "@fortawesome/free-solid-svg-icons/index";
 
 import "./index.scss";
+import DropDown from "components/DropDown/index";
 
 const ExpensesForm = () => {
   const expensesHttp = new ExpensesHttp();
@@ -16,15 +17,11 @@ const ExpensesForm = () => {
     await expensesHttp.createExpense(data);
   };
 
+  const options = ["Food", "Transport", "Utilities", "Clothing", "Other"];
+
   return (
     <Form onSubmit={submitHandler}>
-      <select>
-        <option value="Food">Food</option>
-        <option value="Transport">Transport</option>
-        <option value="Utilities">Utilities</option>
-        <option value="Clothing">Clothing</option>
-        <option value="Other">Other</option>
-      </select>
+      <DropDown data={options} />
       <InputField
         label="Description"
         icon={faComment}

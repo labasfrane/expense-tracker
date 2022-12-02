@@ -2,9 +2,9 @@ import { useEffect, useMemo, useCallback, useContext } from "react";
 import ExpensesForm from "components/ExpensesForm/index";
 import ExpensesList from "components/ExpensesList/index";
 import ExpensesHttp from "http/expenses.http";
+import { ExpensesContext } from "context/expenses.ctx";
 
 import "./index.scss";
-import { ExpensesContext } from "context/expenses.ctx";
 
 const ExpenseDashboard = () => {
   const { data, setData } = useContext(ExpensesContext);

@@ -1,0 +1,42 @@
+@import "styles/colors.scss";
+
+.dropdown {
+  width: 22rem;
+  margin: 2rem auto;
+
+  &__header {
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+    padding: 0.5rem 2rem 0.5rem 1rem;
+    box-shadow: $box-shadow;
+    font-weight: 700;
+  }
+
+  &__list {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    padding-left: 1em;
+    background: #ffffff;
+    border: 2px solid #e5e5e5;
+    box-sizing: border-box;
+
+    &:first-child {
+      padding-top: 0.8em;
+    }
+  }
+
+  &__list-container {
+    background-color: #fff;
+  }
+
+  &__list--item {
+    margin-bottom: 0.8rem;
+    cursor: pointer;
+    width: 20rem;
+
+    &:hover {
+      background-color: $color-primary;
+    }
+  }
+}
