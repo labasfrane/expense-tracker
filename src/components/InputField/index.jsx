@@ -10,15 +10,17 @@ const InputField = ({ label, icon, children, formControl = null }) => {
   const [id, validators] = formControl || [];
   const content = cloneElement(children, { ...register(id, validators) });
   const errorMessage = formState.errors[id]?.message;
+
   return (
     <div className="input-field">
       <label className="input-field__label">{label}</label>
       <div className="input-field__input">
-        {content}
         <FontAwesomeIcon
+          className="m-r-10"
           icon={icon}
           color={errorMessage ? COLOR_DANGER : COLOR_PRIMARY}
         />
+        {content}
       </div>
       <span className="input-field__error">{errorMessage}</span>
     </div>

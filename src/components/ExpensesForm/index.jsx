@@ -40,7 +40,12 @@ const ExpensesForm = () => {
           }),
         ]}
       >
-        <input type="text" placeholder="Description" />
+        <textarea
+          type="textarea"
+          rows="5"
+          cols="20"
+          placeholder="Description"
+        />
       </InputField>
       <InputField
         label="Value"
