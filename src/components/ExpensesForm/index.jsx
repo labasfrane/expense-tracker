@@ -2,10 +2,10 @@ import Button from "components/Button/index";
 import Form from "components/Form/index";
 import InputField from "components/InputField/index";
 import ExpensesHttp from "http/expenses.http";
+import Select from "components/Select/index";
 import { validators } from "utils/generic.utils";
 import { faComment } from "@fortawesome/free-solid-svg-icons";
 import { faMoneyBill } from "@fortawesome/free-solid-svg-icons/index";
-import DropDown from "components/DropDown/index";
 
 import "./index.scss";
 
@@ -18,16 +18,17 @@ const ExpensesForm = () => {
   };
 
   const items = [
-    { id: 0, value: "Food" },
-    { id: 1, value: "Transport" },
-    { id: 2, value: "Utilities" },
-    { id: 3, value: "Clothing" },
-    { id: 4, value: "Other" },
+    { id: 0, value: "food", label: "Food" },
+    { id: 1, value: "transport", label: "Transport" },
+    { id: 2, value: "utilities", label: "Utilities" },
+    { id: 3, value: "clothing", label: "Clothing" },
+    { id: 4, value: "other", label: "Other" },
   ];
 
   return (
     <Form onSubmit={submitHandler}>
-      <DropDown data={items} />
+      <Select options={items} name="select" />
+
       <InputField
         label="Description"
         icon={faComment}
