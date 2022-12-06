@@ -5,9 +5,9 @@ import ExpensesHttp from "http/expenses.http";
 import { validators } from "utils/generic.utils";
 import { faComment } from "@fortawesome/free-solid-svg-icons";
 import { faMoneyBill } from "@fortawesome/free-solid-svg-icons/index";
+import DropDown from "components/DropDown/index";
 
 import "./index.scss";
-import DropDown from "components/DropDown/index";
 
 const ExpensesForm = () => {
   const expensesHttp = new ExpensesHttp();
@@ -17,11 +17,17 @@ const ExpensesForm = () => {
     await expensesHttp.createExpense(data);
   };
 
-  const options = ["Food", "Transport", "Utilities", "Clothing", "Other"];
+  const items = [
+    { id: 0, value: "Food" },
+    { id: 1, value: "Transport" },
+    { id: 2, value: "Utilities" },
+    { id: 3, value: "Clothing" },
+    { id: 4, value: "Other" },
+  ];
 
   return (
     <Form onSubmit={submitHandler}>
-      <DropDown data={options} />
+      <DropDown data={items} />
       <InputField
         label="Description"
         icon={faComment}
