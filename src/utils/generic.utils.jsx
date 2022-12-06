@@ -1,8 +1,10 @@
+import { ERROR_MESSAGES } from "constants/errors.constants";
+
 export function validators(obj) {
   const result = Object.keys(obj).reduce((acc, key) => {
     const validator = {
       value: obj[key],
-      message: key,
+      message: ERROR_MESSAGES || key,
     };
 
     return { ...acc, [key]: validator };
