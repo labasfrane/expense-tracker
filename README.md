@@ -6,7 +6,7 @@ Application is currently work in progress. Check out code to see daily updates!
 
 # Screenshot
 
-![cash-track-screenshot](https://user-images.githubusercontent.com/62171931/204528359-a68d3515-1611-486d-9c56-ae5e69433144.png)
+![Overview](https://user-images.githubusercontent.com/62171931/206146687-ae1268ce-3db2-41b8-a791-6c86fa692d42.png)
 
 # Installation process
 
