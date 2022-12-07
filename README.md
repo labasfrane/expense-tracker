@@ -12,6 +12,9 @@ Application is currently work in progress. Check out code to see daily updates!
 2.DropDown
 ![SelectDropDown](https://user-images.githubusercontent.com/62171931/206147036-c48bb8c1-1131-4833-baa6-70d6b295e6fa.png)
 
+3.Modal
+![ConfirmationModal](https://user-images.githubusercontent.com/62171931/206147721-7463d34d-5c4d-4922-b12e-8895aef11810.png)
+
 
 # Installation process
 
