@@ -4,9 +4,14 @@ This is web application where you can save and follow your expenses.
 
 Application is currently work in progress. Check out code to see daily updates!
 
-# Screenshot
+# Screenshots
 
+1.Overview
 ![Overview](https://user-images.githubusercontent.com/62171931/206146687-ae1268ce-3db2-41b8-a791-6c86fa692d42.png)
+
+2.DropDown
+![SelectDropDown](https://user-images.githubusercontent.com/62171931/206147036-c48bb8c1-1131-4833-baa6-70d6b295e6fa.png)
+
 
 # Installation process
 
