@@ -4,7 +4,7 @@ import { useForm, FormProvider } from "react-hook-form";
 const Form = ({ children, onSubmit, preFill }) => {
   const methods = useForm();
 
-  // useEffect(() => methods.reset(preFill));
+  useEffect(() => methods.reset(preFill), [preFill]);
 
   return (
     <FormProvider {...methods}>

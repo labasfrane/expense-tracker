@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Button from "components/Button/index";
 import Form from "components/Form/index";
 import InputField from "components/InputField/index";
@@ -9,7 +10,22 @@ import { faMoneyBill } from "@fortawesome/free-solid-svg-icons/index";
 
 import "./index.scss";
 
-const ExpensesForm = () => {
+const ExpensesForm = ({ formData }) => {
+  const [expense, setExpense] = useState(null);
+
+  // id: "",
+  // type: "",
+  // description: "",
+  // value: "",
+  // date: "",
+
+  const ExpenseId = formData?.map((item) => {
+    const id = item.id;
+    return id;
+  });
+
+  console.log(ExpenseId);
+
   const expensesHttp = new ExpensesHttp();
 
   const submitHandler = async (data) => {
@@ -26,7 +42,7 @@ const ExpensesForm = () => {
   ];
 
   return (
-    <Form onSubmit={submitHandler}>
+    <Form onSubmit={submitHandler} preFill={expense}>
       <Select options={items} name="select" />
 
       <InputField
